@@ -1,8 +1,0 @@
-#!/bin/bash
-SCRIPTPATH=`readlink -f $0` #This file here
-SCRIPTDIR=`dirname $SCRIPTPATH`
-
-PROJPATH="/mnt/work/alain/work/prog/julia/figuregen/OnDieDecap"
-JULIASCRIPT="$PROJPATH/run.jl"
-JULIACMD="/usr/local/julia/julia-1.6.1/bin/julia"
-exec $JULIACMD -i --color=yes --startup-file=no --project="$PROJPATH" "$JULIASCRIPT" "$@"
